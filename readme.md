@@ -19,4 +19,4 @@ These instructions will help you set up a copy of the project on your local mach
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/timer-website.git
+   git clone https://github.com/chandra-kiran2002/Timer-using-js
