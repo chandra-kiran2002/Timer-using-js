@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href=https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css>
+ 
+  <style>
+    body{
+        background-color: rgb(36, 40, 40);
+    }
+    .error-color {
+      color: red;
+    }
+ 
+    .success-color {
+      color: green;
+    }
+ 
+    .error-container {
+      border: 1px solid red;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+ 
+    .center-div {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+ 
+    #inputs{
+        margin-top: 10%;
+        margin-bottom: 25%;
+    }
+ 
+   
+   
+  </style>
+</head>
+<body>
+ 
+  <div class="center-div">
+    <div id="inputs">
+        <h1 style="color: aliceblue;">Timer</h1>
+ 
+    <p>
+      <label>Set Timer:</label><br>
+      <label style="color: aliceblue;">Hours:</label>
+      <input type="number" id="id_hours" value="00" class="form-control" style="width: 80px; display: inline-block;"/>
+      <label style="color: aliceblue;">Minutes:</label>
+      <input type="number" id="id_minutes" value="00" class="form-control" style="width: 80px; display: inline-block;"/>
+      <label style="color: aliceblue;">Seconds:</label>
+      <input type="number" id="id_seconds" value="00" class="form-control" style="width: 80px; display: inline-block;"/>
+      <button id="btn" class="btn btn-primary">Start</button>
+    </p>
+   
+    <p id="errormessage" class="mt-3"></p>
+    </div>
+ 
+    <h1 style="font-size :90px;">
+      <span  class="text-warning" id="time">00 : 00 : 00</span>
+    </h1>
+    <div style="display: flex;justify-content: space-evenly;">
+        <button id="reset" class="btn btn-danger" style="padding-left: 35px;padding-right: 35px;padding-top: 2px;padding-bottom: 2px    ;">Reset</button>
+        <button class="btn btn-primary" id="pause-resume">Pause/Resume</button>
+    </div>
+   
+ 
+  </div>
+ 
+  <script src="index.js"></script>
+</body>
+</html>
+
